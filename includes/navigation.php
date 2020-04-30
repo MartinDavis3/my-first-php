@@ -13,6 +13,9 @@
     <li>
       <a href="./oop.php">OOP</a>
     </li>
+    <li>
+      <a href="./oop-and-file.php">OOP and File Retrieval</a>
+    </li>
   </ul>
 </nav>
 <?php

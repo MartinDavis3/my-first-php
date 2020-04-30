@@ -1,13 +1,14 @@
 <?php
+// this is code that sets error reporting to cover all errors
 ini_set( 'display_errors', 1);
 ini_set( 'display_startup_errors', 1);
 error_reporting( E_ALL );
 //
 //A basic object
 $myObject = new stdClass(); //"new" keyword is required
-// to add a property -> syntax.
-$myObject->name             = "jim Bob-Bob";
-$myObject->age              = 41;
+// to add a property, use -> syntax.
+$myObject->name      = "jim Bob-Bob";
+$myObject->age       = 41;
 $myObject->interests = array( 'PHP', 'CSS' );
 //Include class blueprint file
 include './includes/Snack.Class.php';
@@ -18,7 +19,6 @@ $jollyRanchers = new Snack( 'Jolly Ranchers', 1.25, 'Fruit' );
 $sharwarma = new Snack( 'sharwarma', 7.86, 'Wrap' );
 //put the min an array
 $snacks = array( $cheetos, $gushers, $jollyRanchers, $sharwarma );
-
 
 ?><!DOCTYPE html>
 <html lang="en">
