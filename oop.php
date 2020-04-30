@@ -5,7 +5,12 @@ error_reporting( E_ALL );
 //
 //A basic object
 $myObject = new stdClass(); //"new" keyword is required
-
+// to add a property -> syntax.
+$myObject->name             = "jim Bob-Bob";
+$myObject->age              = 41;
+$myObject->interests = array( 'PHP', 'CSS' );
+//Include class blueprint file
+include './includes/Snack.Class.php';
 
 
 ?><!DOCTYPE html>
