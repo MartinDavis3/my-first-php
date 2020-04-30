@@ -11,6 +11,13 @@ $myObject->age              = 41;
 $myObject->interests = array( 'PHP', 'CSS' );
 //Include class blueprint file
 include './includes/Snack.Class.php';
+//Make a snack
+$cheetos = new Snack( 'Cheetos', 3.99, 'Chip' );
+$gushers = new Snack( 'Fruit Gushers', 2.55, 'Fruit' );
+$jollyRanchers = new Snack( 'Jolly Ranchers', 1.25, 'Fruit' );
+$sharwarma = new Snack( 'sharwarma', 7.86, 'Wrap' );
+//put the min an array
+$snacks = array( $cheetos, $gushers, $jollyRanchers, $sharwarma );
 
 
 ?><!DOCTYPE html>
@@ -26,6 +33,16 @@ include './includes/Snack.Class.php';
     <h2>$myObject</h2>
     <pre>
       <?php var_dump( $myObject); ?>
+      <h2>Snacks</h2>
+      <?php if ( count( $snacks ) > 0 ) : ?>
+        <ul>
+          <?php foreach ( $snacks as $snack ) : ?>
+            <li>
+              <?php $snack->output( TRUE );   ?>
+            </li>
+          <?php endforeach; ?>
+        </ul>
+      <?php endif; ?>
     </pre>
   </body>
 </html>
