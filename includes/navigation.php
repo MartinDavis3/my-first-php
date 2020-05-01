@@ -16,6 +16,9 @@
     <li>
       <a href="./oop-and-file.php">OOP and File Retrieval</a>
     </li>
+    <li>
+      <a href="./api-request-test.php">API Request Test</a>
+    </li>
   </ul>
 </nav>
 <?php
