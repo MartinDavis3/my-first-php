@@ -5,6 +5,13 @@
       <a href="./index.php">Home</a>
     </li>
     <li>
+      <a href="./phpinfo.php">
+      PHP Info
+      <strong style="color: red;">
+      NEVER DO THIS IN THE REAL WOLD
+      </strong>
+      </a>
+    <li>
       <a href="./form.php">Form</a>
     </li>
     <li>
@@ -18,6 +25,9 @@
     </li>
     <li>
       <a href="./api-request-test.php">API Request Test</a>
+    </li>
+    <li>
+      <a href="./api-external-php-test.php">API Request Test (PHP + Endpoint)</a>
     </li>
   </ul>
 </nav>

@@ -37,6 +37,7 @@ $myAssociativeArray['interests'][] = 'HTML';
     <header>
     </header>
     <h1>Arrays</h1>
+    <?php include './includes/navigation.php'; ?>
     <h2>Indexed Array</h2>
     <ul>
       <?php foreach ( $myIndexedArray as $item ) :  // one syntax - use the colon at end of foreach line and then endforeach at end of block.?>
